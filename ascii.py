@@ -1,11 +1,12 @@
 import cv2
 import numpy as np
+import sys
 
 origin_img = cv2.imread('marc.jpg', cv2.IMREAD_GRAYSCALE)
 
 origin_imax, origin_jmax = origin_img.shape
-imax = 70
-jmax = 200
+imax = 100
+jmax = 300
 img = np.zeros((imax, jmax))
 
 def average(i1, i2, j1, j2):
